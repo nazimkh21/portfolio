@@ -1,0 +1,92 @@
+.feedback-section{
+  padding: 40px 0;
+}
+.feedback-title{
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.user-info {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.user-name {
+  font-weight: 600;
+  color: #333;
+}
+.logout-button {
+  margin-left: auto;
+  padding: 6px 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.logout-button:hover {
+  background: #c82333;
+}
+
+.login-prompt {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  text-align: center;
+}
+.google-login-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 20px;
+  background: #4285f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.google-login-button:hover {
+  background: #3367d6;
+}
+
+.feedback-form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.feedback-input,.feedback-textarea{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.feedback-textarea{ min-height: 90px; }
+.feedback-button{ align-self: flex-start; padding: 8px 14px; }
+.feedback-error{ color:#b00020; margin: 8px 0; }
+.feedback-loading{ opacity: .8; }
+.feedback-list{ display: flex; flex-direction: column; gap: 16px; }
+.feedback-item{ border:1px solid #eee; border-radius: 10px; padding: 12px; }
+.feedback-header{ display:flex; gap:8px; font-size: 12px; color:#666; }
+.feedback-author{ font-weight: 600; color:#333; }
+.feedback-content{ margin-top:8px; margin-bottom:10px; }
+.reply-list{ display:flex; flex-direction: column; gap:10px; margin: 8px 0 0 12px; padding-left:12px; border-left:2px solid #f0f0f0; }
+.reply-item{ font-size: 14px; }
+.reply-author{ font-weight: 600; margin-right: 6px; }
+.reply-date{ font-size: 11px; color:#888; margin-left: 6px; }
+.reply-content{ margin-top: 4px; }
+.reply-form{ display:flex; gap:8px; margin-top: 10px; }
+.reply-input{ flex:1; border:1px solid #ddd; border-radius: 8px; padding: 8px 10px; }
+.reply-button{ padding: 8px 12px; }
+
+

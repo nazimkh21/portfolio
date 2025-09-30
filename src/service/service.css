@@ -1,0 +1,133 @@
+.services-section {
+  padding: 70px 20px;
+  background-color: var(--secondary);
+}
+
+.services-section .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom:50px ;
+  
+}
+
+.services-section .section-header h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--title);
+  margin-bottom: 15px;
+   padding-top: 7px;
+}
+
+.services-section .section-header p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--subtitle);
+ 
+}
+
+.services-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.services-widget .service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  position: relative;
+  transition: all 0.3s ease;
+  gap: 20px;
+ 
+}
+.service-item:last-child{
+    margin-bottom: 20px;
+}
+
+.services-widget .service-item:hover {
+  border-color: var(--blue);
+  background: rgba(93,188,252,0.05);
+  transform: translateY(-3px);
+}
+
+.services-widget .service-item .number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--blue);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.services-widget .service-item .left-box {
+  flex: 1;
+}
+
+.services-widget .service-item .left-box .service-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--title);
+}
+
+.services-widget .service-item .right-box {
+  flex: 2;
+  color: var(--subtitle);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.services-widget i {
+  font-size: 1.4rem;
+  color: var(--blue);
+  transition: all 0.3s ease;
+  margin-left: 15px;
+}
+
+.services-widget .service-item:hover i {
+  transform: translateX(5px);
+  color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-widget .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .services-widget .service-item .right-box {
+    margin-top: 10px;
+  }
+
+  .services-widget i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    padding: 50px 15px;
+  }
+
+  .services-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-widget .service-item .left-box .service-title {
+    font-size: 1.2rem;
+  }
+
+  .services-widget .service-item .right-box {
+    font-size: 0.9rem;
+  }
+}
